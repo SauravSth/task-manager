@@ -15,19 +15,16 @@ app.listen(port, () => {
 	console.log('Running on port ' + port)
 })
 
-const Task = require('./models/task')
-const User = require('./models/user')
+// const Task = require('./models/task')
+// const User = require('./models/user')
 
-const main = async () => {
-	try {
-		// const task = await Task.findById('61fe2a7707d99e28800fcd7e')
-		// await task.populate('owner').execPopulate()
-		// console.log(task.owner)
-		const user = await User.findById('61fe27e2c09e56c94ca6fd2a')
-		await user.populate('tasks')
-		console.log(user.tasks)
-	} catch (e) {
-		console.log(e)
-	}
-}
-main()
+// const main = async () => {
+// 	try {
+// 		const user = await User.findById('61fe27e2c09e56c94ca6fd2a')
+// 		await user.populate('tasks')
+// 		console.log(user.tasks)
+// 	} catch (e) {
+// 		console.log(e)
+// 	}
+// }
+// main()
